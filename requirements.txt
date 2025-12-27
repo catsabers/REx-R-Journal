@@ -1,0 +1,7 @@
+# REx:R Journal
+# Python 3.7+ required
+
+# Modern Qt UI (recommended)
+# Python 3.10+ supported in this repo's current environment.
+PySide6>=6.6.0
+
