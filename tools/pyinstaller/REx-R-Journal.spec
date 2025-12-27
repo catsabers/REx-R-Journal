@@ -1,12 +1,17 @@
                                       
 
+from pathlib import Path
+
 block_cipher = None
 
+SPECPATH = globals().get("SPECPATH", None)
+ROOT = (Path(SPECPATH).resolve().parents[1] if SPECPATH else Path.cwd().resolve())
+
 a = Analysis(
-    ['main.py'],
-    pathex=[],
+    [str(ROOT / 'main.py')],
+    pathex=[str(ROOT)],
     binaries=[],
-    datas=[('assets/rexlogo.png', 'assets')],
+    datas=[(str(ROOT / 'assets' / 'rexlogo.png'), 'assets')],
     hiddenimports=[
         'PySide6.QtCore',
         'PySide6.QtGui',
@@ -45,6 +50,6 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon='assets/rexlogo.ico',
+    icon=str(ROOT / 'assets' / 'rexlogo.ico'),
 )
 
