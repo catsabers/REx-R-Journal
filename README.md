@@ -3,6 +3,7 @@
 A handy tool to log ores found within [REX:Reincarnated](https://www.roblox.com/games/8549934015/REx-Reincarnated)
 
 Code was written by myself & Cursor AI (GPT 5.2).
+AI was used for large data entry and optimizing code. 
 
 ## Current Features
 
