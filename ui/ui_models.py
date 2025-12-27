@@ -125,13 +125,14 @@ def _build_sort_keys(ore_db: OreDatabase):
         Tier.MASTER: 4,
         Tier.SURREAL: 5,
         Tier.MYTHIC: 6,
-        Tier.EXQUISITE: 7,
-        Tier.TRANSCENDENT: 8,
-        Tier.ENIGMATIC: 9,
-        Tier.UNFATHOMABLE: 10,
-        Tier.OTHERWORLDLY: 11,
-        Tier.ZENITH: 12,
-        Tier.EXCLUSIVE: 13,
+        Tier.EXOTIC: 7,
+        Tier.EXQUISITE: 8,
+        Tier.TRANSCENDENT: 9,
+        Tier.ENIGMATIC: 10,
+        Tier.UNFATHOMABLE: 11,
+        Tier.OTHERWORLDLY: 12,
+        Tier.ZENITH: 13,
+        Tier.EXCLUSIVE: 14,
     }
     return world_order, layer_order_cache, tier_order
 
