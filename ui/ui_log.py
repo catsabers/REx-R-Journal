@@ -15,6 +15,7 @@ from PySide6.QtWidgets import (
     QLineEdit,
     QListWidget,
     QListWidgetItem,
+    QMessageBox,
     QPushButton,
     QSizePolicy,
     QSpacerItem,
@@ -25,7 +26,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from ore_data import Ore, OreDatabase
+from ore_data import Ore, OreDatabase, Tier
 from .ui_theme import UiTheme, norm_variant, tier_color, variant_color, VARIANTS
 
 
@@ -108,12 +109,12 @@ class LogFindDialog(QDialog):
         m_row = QHBoxLayout()
         m_row.setContentsMargins(0, 0, 0, 0)
         m_row.setSpacing(10)
-        mlabel = QLabel("Mined (optional)")
+        mlabel = QLabel("Mined")
         mlabel.setFixedWidth(120)
         m_row.addWidget(mlabel)
         self.mined_edit = QLineEdit()
-        self.mined_edit.setPlaceholderText("e.g. 250")
-        self.mined_edit.setValidator(QIntValidator(0, 2_147_483_647, self))
+        self.mined_edit.setPlaceholderText("Required (e.g. 250)")
+        self.mined_edit.setValidator(QIntValidator(1, 2_147_483_647, self))
         m_row.addWidget(self.mined_edit, 1)
         details_layout.addLayout(m_row)
 
@@ -128,11 +129,12 @@ class LogFindDialog(QDialog):
         layout.addLayout(btn_row)
 
         self.cancel_btn.clicked.connect(self.reject)
-        self.ok_btn.clicked.connect(self.accept)
+        self.ok_btn.clicked.connect(self._try_accept)
 
         self.search.textChanged.connect(self._refresh_results)
-        self.results.itemDoubleClicked.connect(lambda _it: self.accept())
+        self.results.itemDoubleClicked.connect(lambda _it: self._try_accept())
         self.variant_combo.currentIndexChanged.connect(lambda _i: self._on_variant_changed())
+        self.results.currentItemChanged.connect(lambda _cur, _prev: self._on_selected_changed())
 
         self._all = self.ore_db.get_all_ores()
         self._ore_by_key = {o.key: o for o in self._all}
@@ -144,13 +146,63 @@ class LogFindDialog(QDialog):
             "QListWidget::item{background:transparent;border:none;margin:0;padding:0;}"
         )
         self._refresh_results()
+        self._on_selected_changed()
 
     def _on_variant_changed(self):
         try:
+            self._on_selected_changed()
             self._results_delegate.set_variant(self.selected_variant())
             self.results.viewport().update()
         except Exception:
             pass
+
+    def _set_normal_enabled(self, enabled: bool) -> None:
+        try:
+            m = self.variant_combo.model()
+            idx = self.variant_combo.findData("normal")
+            if idx >= 0 and hasattr(m, "item"):
+                it = m.item(idx)
+                if it is not None:
+                    it.setEnabled(bool(enabled))
+        except Exception:
+            pass
+
+    def _on_selected_changed(self):
+        k = self.selected_ore_key()
+        if not k:
+            self._set_normal_enabled(True)
+            return
+        ore = self._ore_by_key.get(str(k))
+        if ore is None:
+            self._set_normal_enabled(True)
+            return
+        if ore.tier == Tier.EXOTIC:
+            self._set_normal_enabled(False)
+            if self.selected_variant() == "normal":
+                idx = self.variant_combo.findData("ionized")
+                if idx >= 0:
+                    self.variant_combo.setCurrentIndex(idx)
+        else:
+            self._set_normal_enabled(True)
+
+    def _try_accept(self):
+        ore_key = self.selected_ore_key()
+        if not ore_key:
+            QMessageBox.information(self, "Select an Ore", "Please select an ore to log.")
+            return
+        ore = self._ore_by_key.get(str(ore_key))
+        if ore is not None and ore.tier == Tier.EXOTIC and self.selected_variant() == "normal":
+            QMessageBox.information(self, "Cannot Log Exotic", "Exotic ores must be logged as Ionized or Spectral.")
+            return
+        mined = self.selected_mined()
+        if mined is None or mined < 1:
+            QMessageBox.information(self, "Mined Required", "Please enter how many mined (at least 1).")
+            try:
+                self.mined_edit.setFocus()
+            except Exception:
+                pass
+            return
+        self.accept()
 
     def _refresh_results(self):
         q = (self.search.text() or "").strip().lower()
@@ -181,7 +233,8 @@ class LogFindDialog(QDialog):
         if not s:
             return None
         try:
-            return int(s)
+            v = int(s)
+            return v if v >= 1 else None
         except Exception:
             return None
 

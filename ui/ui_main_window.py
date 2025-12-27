@@ -28,10 +28,11 @@ from PySide6.QtWidgets import (
     QVBoxLayout,
     QWidget,
     QFileDialog,
+    QTextEdit,
 )
 
 from app_meta import CURRENT_VERSION, GITHUB_REPO
-from ore_data import Ore, OreDatabase
+from ore_data import Ore, OreDatabase, Tier
 from persistence import load_state_from_obj, save_state
 import updater
 from .ui_log import LogEntryDelegate, LogFindDialog, LogListWidget
@@ -219,6 +220,7 @@ class MainWindow(QMainWindow):
         self.filter_panel.changed.connect(self._apply_filters)
         self.filter_panel.exportRequested.connect(self._export_data)
         self.filter_panel.importRequested.connect(self._import_data)
+        self.filter_panel.patchNotesRequested.connect(self._show_patch_notes)
         self.filter_panel.updateRequested.connect(self._check_for_updates)
         self.list_view.clicked.connect(self._on_click)
         self.ore_model.foundToggled.connect(self._refresh_stats_and_save)
@@ -315,6 +317,13 @@ class MainWindow(QMainWindow):
         entry_variant = dlg.selected_variant()
         mined = dlg.selected_mined()
 
+        if chosen.tier == Tier.EXOTIC and norm_variant(entry_variant) == "normal":
+            QMessageBox.information(self, "Cannot Log Exotic", "Exotic ores must be logged as Ionized or Spectral.")
+            return
+        if mined is None or int(mined) < 1:
+            QMessageBox.information(self, "Mined Required", "Please enter how many mined (at least 1).")
+            return
+
         self.tracked[track_key(entry_variant, chosen.key)] = True
 
         self.logs.append(
@@ -332,6 +341,49 @@ class MainWindow(QMainWindow):
         self._apply_filters()
         self._refresh_log_list()
         self._refresh_stats_and_save(save=True)
+
+    @staticmethod
+    def _resource_path(relative_path: str) -> Path:
+        try:
+            base = Path(sys._MEIPASS)
+        except Exception:
+            base = Path(__file__).resolve().parents[1]
+        return base / relative_path
+
+    def _show_patch_notes(self):
+        p = self._resource_path("assets/patch_notes.md")
+        try:
+            txt = p.read_text(encoding="utf-8", errors="replace")
+        except Exception:
+            txt = ""
+        if not txt.strip():
+            QMessageBox.information(self, "Patch Notes", "No patch notes found yet.")
+            return
+
+        dlg = QDialog(self)
+        dlg.setWindowTitle(f"Patch Notes — v{CURRENT_VERSION}")
+        dlg.resize(760, 560)
+        layout = QVBoxLayout(dlg)
+        layout.setContentsMargins(14, 14, 14, 14)
+        layout.setSpacing(10)
+
+        title = QLabel(f"Patch Notes — v{CURRENT_VERSION}")
+        title.setStyleSheet("font-size: 16pt; font-weight: 900;")
+        layout.addWidget(title)
+
+        box = QTextEdit()
+        box.setReadOnly(True)
+        box.setPlainText(txt)
+        layout.addWidget(box, 1)
+
+        close_row = QHBoxLayout()
+        close_row.addItem(QSpacerItem(10, 10, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum))
+        close_btn = QPushButton("Close")
+        close_row.addWidget(close_btn)
+        layout.addLayout(close_row)
+        close_btn.clicked.connect(dlg.accept)
+
+        dlg.exec()
 
     def _delete_log_entry(self, log_index: int):
         if not isinstance(log_index, int):

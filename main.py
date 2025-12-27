@@ -11,7 +11,7 @@ from PySide6.QtCore import QStandardPaths
 from ore_data import OreDatabase
 from persistence import load_state, save_state
 from qt_gui import DARK, MainWindow, apply_app_theme
-from updater import apply_update_and_restart
+from updater import apply_update_and_restart, is_frozen_exe
 
 
 def get_resource_path(relative_path: str) -> Path:
@@ -84,6 +84,14 @@ def main():
         target_exe = Path(sys.argv[3])
         apply_update_and_restart(new_exe, target_exe)
         return
+
+    if is_frozen_exe():
+        try:
+            exe = Path(sys.executable)
+            backup = exe.with_suffix(exe.suffix + ".old")
+            backup.unlink(missing_ok=True)
+        except Exception:
+            pass
 
     app = OreTrackerApp()
     app.run()

@@ -29,6 +29,7 @@ class FilterPanel(QWidget):
     changed = Signal()
     exportRequested = Signal()
     importRequested = Signal()
+    patchNotesRequested = Signal()
     updateRequested = Signal()
 
     def __init__(self, ore_db: OreDatabase, parent: QWidget | None = None):
@@ -88,6 +89,11 @@ class FilterPanel(QWidget):
         data_layout.setContentsMargins(12, 12, 12, 12)
         data_layout.setSpacing(10)
 
+        self.patch_notes_btn = QPushButton("Patch notes")
+        self.patch_notes_btn.setObjectName("DataBtn")
+        self.patch_notes_btn.setMinimumHeight(38)
+        data_layout.addWidget(self.patch_notes_btn)
+
         self.update_btn = QPushButton("Check for updates")
         self.update_btn.setObjectName("DataBtn")
         self.update_btn.setMinimumHeight(38)
@@ -116,6 +122,7 @@ class FilterPanel(QWidget):
         self.sort.currentTextChanged.connect(lambda _v: self.changed.emit())
         self.export_btn.clicked.connect(lambda _v: self.exportRequested.emit())
         self.import_btn.clicked.connect(lambda _v: self.importRequested.emit())
+        self.patch_notes_btn.clicked.connect(lambda _v: self.patchNotesRequested.emit())
         self.update_btn.clicked.connect(lambda _v: self.updateRequested.emit())
 
         self._on_world_changed(self.world.currentText())

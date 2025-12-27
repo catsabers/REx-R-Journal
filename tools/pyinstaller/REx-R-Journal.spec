@@ -11,7 +11,10 @@ a = Analysis(
     [str(ROOT / 'main.py')],
     pathex=[str(ROOT)],
     binaries=[],
-    datas=[(str(ROOT / 'assets' / 'rexlogo.png'), 'assets')],
+    datas=[
+        (str(ROOT / 'assets' / 'rexlogo.png'), 'assets'),
+        (str(ROOT / 'assets' / 'patch_notes.md'), 'assets'),
+    ],
     hiddenimports=[
         'PySide6.QtCore',
         'PySide6.QtGui',

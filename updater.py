@@ -221,4 +221,15 @@ def apply_update_and_restart(new_exe: Path, target_exe: Path, *, wait_s: float =
                                               
         pass
 
+    if backup.exists():
+        start2 = time.time()
+        while time.time() - start2 < 3.0:
+            try:
+                backup.unlink(missing_ok=True)
+                break
+            except PermissionError:
+                time.sleep(0.2)
+            except Exception:
+                break
+
 
