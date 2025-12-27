@@ -43,7 +43,6 @@ TIER_COLORS_DARK = {
     "Master": "#9C27B0",
     "Surreal": "#FF9800",
     "Mythic": "#F44336",
-    "Exotic": "#FFD700",
     "Exquisite": "#00FF88",
     "Transcendent": "#00D4FF",
     "Enigmatic": "#FFEB3B",

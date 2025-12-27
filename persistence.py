@@ -49,6 +49,9 @@ def load_state_from_obj(raw: Any, ore_db: OreDatabase) -> Tuple[str, str, Dict[s
         if isinstance(raw_logs, list):
                                       
             logs = [e for e in raw_logs if isinstance(e, dict)]
+        valid_ore_keys = {o.key for o in ore_db.get_all_ores()}
+        if logs:
+            logs = [e for e in logs if str(e.get("ore_key") or "") in valid_ore_keys]
         raw_tracked = raw.get("tracked_ores") or {}
         if not isinstance(raw_tracked, dict):
             return theme, variant, tracked, logs

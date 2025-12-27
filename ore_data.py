@@ -14,7 +14,6 @@ class Tier(Enum):
     MASTER = "Master"
     SURREAL = "Surreal"
     MYTHIC = "Mythic"
-    EXOTIC = "Exotic"
     EXQUISITE = "Exquisite"
     TRANSCENDENT = "Transcendent"
     ENIGMATIC = "Enigmatic"
@@ -82,8 +81,6 @@ class OreDatabase:
         
                        
                                                                                                          
-        self.ores.append(Ore("Aegistone", "Natura", "Stone Layer", Tier.EXOTIC, rarity_value=2820000))
-        self.ores.append(Ore("Scertanium", "Natura", "Stone Layer", Tier.EXOTIC, rarity_value=3524000))
         self.ores.append(Ore("Penumbrosia", "Natura", "Stone Layer", Tier.EXQUISITE, rarity_value=9125550))
         self.ores.append(Ore("Pasivium", "Natura", "Stone Layer", Tier.TRANSCENDENT, rarity_value=21210000))
         self.ores.append(Ore("Pastelorium", "Natura", "Stone Layer", Tier.TRANSCENDENT, rarity_value=44300000))
@@ -92,8 +89,6 @@ class OreDatabase:
         self.ores.append(Ore("Endozivite", "Natura", "Stone Layer", Tier.UNFATHOMABLE, rarity_value=247010000))
         
                                         
-        self.ores.append(Ore("Freon", "Natura", "Basalt Layer", Tier.EXOTIC, rarity_value=3333333))
-        self.ores.append(Ore("Snoblintium", "Natura", "Basalt Layer", Tier.EXOTIC, rarity_value=4220000))
         self.ores.append(Ore("Nauticalis", "Natura", "Basalt Layer", Tier.EXQUISITE, rarity_value=12221221))
         self.ores.append(Ore("Azuryl", "Natura", "Basalt Layer", Tier.TRANSCENDENT, rarity_value=26700000))
         self.ores.append(Ore("Glacielle", "Natura", "Basalt Layer", Tier.TRANSCENDENT, rarity_value=31400000))
@@ -102,8 +97,6 @@ class OreDatabase:
         self.ores.append(Ore("Inclemetite", "Natura", "Basalt Layer", Tier.UNFATHOMABLE, rarity_value=386500000))
         
                                          
-        self.ores.append(Ore("Astatine", "Natura", "Granite Layer", Tier.EXOTIC, rarity_value=4200000))
-        self.ores.append(Ore("Elexinite", "Natura", "Granite Layer", Tier.EXOTIC, rarity_value=2120000))
         self.ores.append(Ore("Elegascene", "Natura", "Granite Layer", Tier.EXQUISITE, rarity_value=13902340))
         self.ores.append(Ore("Oviridis", "Natura", "Granite Layer", Tier.EXQUISITE, rarity_value=9239085))
         self.ores.append(Ore("Erodimium", "Natura", "Granite Layer", Tier.TRANSCENDENT, rarity_value=35900000))
@@ -113,8 +106,6 @@ class OreDatabase:
         self.ores.append(Ore("Terratomere", "Natura", "Granite Layer", Tier.UNFATHOMABLE, rarity_value=213200000))
         
                                          
-        self.ores.append(Ore("Monocage", "Natura", "Diorite Layer", Tier.EXOTIC, rarity_value=5000000))
-        self.ores.append(Ore("Neptunium", "Natura", "Diorite Layer", Tier.EXOTIC, rarity_value=4390000))
         self.ores.append(Ore("Acceleratium", "Natura", "Diorite Layer", Tier.EXQUISITE, rarity_value=7820000))
         self.ores.append(Ore("Lucidium", "Natura", "Diorite Layer", Tier.TRANSCENDENT, rarity_value=43211234))
         self.ores.append(Ore("Quandrium", "Natura", "Diorite Layer", Tier.TRANSCENDENT, rarity_value=29290000))
@@ -123,8 +114,6 @@ class OreDatabase:
         self.ores.append(Ore("Illusory Bubblegram", "Natura", "Diorite Layer", Tier.UNFATHOMABLE, rarity_value=426800050))
         
                                           
-        self.ores.append(Ore("Blazuine", "Natura", "Obsidian Layer", Tier.EXOTIC, rarity_value=5700000))
-        self.ores.append(Ore("Exolite", "Natura", "Obsidian Layer", Tier.EXOTIC, rarity_value=2432100))
         self.ores.append(Ore("Formidulus", "Natura", "Obsidian Layer", Tier.EXQUISITE, rarity_value=12302022))
         self.ores.append(Ore("Obscuralis", "Natura", "Obsidian Layer", Tier.EXQUISITE, rarity_value=9230230))
         self.ores.append(Ore("Sentient Viscera", "Natura", "Obsidian Layer", Tier.TRANSCENDENT, rarity_value=34500000))
@@ -134,8 +123,6 @@ class OreDatabase:
         self.ores.append(Ore("Nyctophyte", "Natura", "Obsidian Layer", Tier.UNFATHOMABLE, rarity_value=538000000))
         
                                         
-        self.ores.append(Ore("Photoprisma", "Natura", "Marble Layer", Tier.EXOTIC, rarity_value=2300000))
-        self.ores.append(Ore("Temporum", "Natura", "Marble Layer", Tier.EXOTIC, rarity_value=5555555))
         self.ores.append(Ore("Ornalium", "Natura", "Marble Layer", Tier.EXQUISITE, rarity_value=9100000))
         self.ores.append(Ore("Aether", "Natura", "Marble Layer", Tier.TRANSCENDENT, rarity_value=22000000))
         self.ores.append(Ore("Luminatite", "Natura", "Marble Layer", Tier.TRANSCENDENT, rarity_value=34350000))
@@ -145,8 +132,6 @@ class OreDatabase:
         self.ores.append(Ore("Idolium", "Natura", "Marble Layer", Tier.UNFATHOMABLE, rarity_value=170000000))
         
                                         
-        self.ores.append(Ore("Poiseon", "Natura", "Mantle Layer", Tier.EXOTIC, rarity_value=3333333))
-        self.ores.append(Ore("Polonium", "Natura", "Mantle Layer", Tier.EXOTIC, rarity_value=5555555))
         self.ores.append(Ore("Euclideum", "Natura", "Mantle Layer", Tier.EXQUISITE, rarity_value=14142135))
         self.ores.append(Ore("Vitrilyx", "Natura", "Mantle Layer", Tier.EXQUISITE, rarity_value=9000000))
         self.ores.append(Ore("Albinite", "Natura", "Mantle Layer", Tier.TRANSCENDENT, rarity_value=44444444))
@@ -157,9 +142,6 @@ class OreDatabase:
         self.ores.append(Ore("Scribbal", "Natura", "Mantle Layer", Tier.UNFATHOMABLE, rarity_value=200000000))
         
                                                                                                               
-        self.ores.append(Ore("Combustal", "Natura", "Outer Core Layer", Tier.EXOTIC, rarity_value=5500000))
-        self.ores.append(Ore("Flaeon", "Natura", "Outer Core Layer", Tier.EXOTIC, rarity_value=3333333))
-        self.ores.append(Ore("Thundarian", "Natura", "Outer Core Layer", Tier.EXOTIC, rarity_value=2400000))
         self.ores.append(Ore("Bonfire", "Natura", "Outer Core Layer", Tier.EXQUISITE, rarity_value=12000000))
         self.ores.append(Ore("Cleopatrite", "Natura", "Outer Core Layer", Tier.TRANSCENDENT, rarity_value=22500000))
         self.ores.append(Ore("Suncindium", "Natura", "Outer Core Layer", Tier.TRANSCENDENT, rarity_value=20500000))
@@ -169,9 +151,6 @@ class OreDatabase:
         self.ores.append(Ore("Dynamo of Fate", "Natura", "Outer Core Layer", Tier.UNFATHOMABLE, rarity_value=750000000))
         
                                             
-        self.ores.append(Ore("Accretium", "Natura", "Inner Core Layer", Tier.EXOTIC, rarity_value=3820000))
-        self.ores.append(Ore("Combustal", "Natura", "Inner Core Layer", Tier.EXOTIC, rarity_value=5500000))
-        self.ores.append(Ore("Flaeon", "Natura", "Inner Core Layer", Tier.EXOTIC, rarity_value=3333333))
         self.ores.append(Ore("Emberstyx", "Natura", "Inner Core Layer", Tier.EXQUISITE, rarity_value=14000000))
         self.ores.append(Ore("Cleopatrite", "Natura", "Inner Core Layer", Tier.TRANSCENDENT, rarity_value=22500000))
         self.ores.append(Ore("Vulkavium", "Natura", "Inner Core Layer", Tier.TRANSCENDENT, rarity_value=23100000))
@@ -187,7 +166,6 @@ class OreDatabase:
                      
         self.ores.append(Ore("Cerlustrium", "Natura", "Cave Exclusive", Tier.ENIGMATIC, rarity_value=25600000, is_cave_exclusive=True, cave_type="Frozen"))
                        
-        self.ores.append(Ore("Teslarium", "Natura", "Cave Exclusive", Tier.EXOTIC, rarity_value=350000, is_cave_exclusive=True, cave_type="Metallic"))
                     
         self.ores.append(Ore("Drusentyl", "Natura", "Cave Exclusive", Tier.EXQUISITE, rarity_value=1100000, is_cave_exclusive=True, cave_type="Geode"))
         self.ores.append(Ore("Empress of Light", "Natura", "Cave Exclusive", Tier.UNFATHOMABLE, rarity_value=8000000, is_cave_exclusive=True, cave_type="Geode"))
@@ -204,7 +182,6 @@ class OreDatabase:
         
                         
                                        
-        self.ores.append(Ore("Matterium", "Caverna", "Slate Layer", Tier.EXOTIC, rarity_value=3125000))
         self.ores.append(Ore("Atomium", "Caverna", "Slate Layer", Tier.EXQUISITE, rarity_value=9091929))
         self.ores.append(Ore("Cognicite", "Caverna", "Slate Layer", Tier.EXQUISITE, rarity_value=14000000))
         self.ores.append(Ore("Plasmonium", "Caverna", "Slate Layer", Tier.TRANSCENDENT, rarity_value=24000000))
@@ -214,7 +191,6 @@ class OreDatabase:
         self.ores.append(Ore("The Cylinder", "Caverna", "Slate Layer", Tier.UNFATHOMABLE, rarity_value=201061929))
         
                                             
-        self.ores.append(Ore("Covellite", "Caverna", "Permafrost Layer", Tier.EXOTIC, rarity_value=4400400))
         self.ores.append(Ore("Hexagelite", "Caverna", "Permafrost Layer", Tier.EXQUISITE, rarity_value=11000000))
         self.ores.append(Ore("Laivertine", "Caverna", "Permafrost Layer", Tier.EXQUISITE, rarity_value=14000000))
         self.ores.append(Ore("Coselnix", "Caverna", "Permafrost Layer", Tier.TRANSCENDENT, rarity_value=22000000))
@@ -224,8 +200,6 @@ class OreDatabase:
         self.ores.append(Ore("Caelarius", "Caverna", "Permafrost Layer", Tier.UNFATHOMABLE, rarity_value=583000000))
         
                                               
-        self.ores.append(Ore("Accretite", "Caverna", "Shatterstone Layer", Tier.EXOTIC, rarity_value=6500000))
-        self.ores.append(Ore("Entiniol", "Caverna", "Shatterstone Layer", Tier.EXOTIC, rarity_value=7020000))
         self.ores.append(Ore("Optimivium", "Caverna", "Shatterstone Layer", Tier.EXQUISITE, rarity_value=9280090))
         self.ores.append(Ore("Catastormite", "Caverna", "Shatterstone Layer", Tier.TRANSCENDENT, rarity_value=28600000))
         self.ores.append(Ore("Contravexium", "Caverna", "Shatterstone Layer", Tier.TRANSCENDENT, rarity_value=39500000))
@@ -234,8 +208,6 @@ class OreDatabase:
         self.ores.append(Ore("Acrimony", "Caverna", "Shatterstone Layer", Tier.UNFATHOMABLE, rarity_value=257280000))
         
                                           
-        self.ores.append(Ore("Crystal Oculite", "Caverna", "Riftrock Layer", Tier.EXOTIC, rarity_value=3478290))
-        self.ores.append(Ore("Enchantium", "Caverna", "Riftrock Layer", Tier.EXOTIC, rarity_value=7138000))
         self.ores.append(Ore("Torilite", "Caverna", "Riftrock Layer", Tier.EXQUISITE, rarity_value=11250000))
         self.ores.append(Ore("Spiritian", "Caverna", "Riftrock Layer", Tier.TRANSCENDENT, rarity_value=24800000))
         self.ores.append(Ore("Twilight Mist", "Caverna", "Riftrock Layer", Tier.TRANSCENDENT, rarity_value=28580045))
@@ -245,8 +217,6 @@ class OreDatabase:
         self.ores.append(Ore("NOO P α", "Caverna", "Riftrock Layer", Tier.UNFATHOMABLE, rarity_value=709000750))
         
                                             
-        self.ores.append(Ore("Arcaleus", "Caverna", "Darkmatter Layer", Tier.EXOTIC, rarity_value=6180980))
-        self.ores.append(Ore("Aurantial", "Caverna", "Darkmatter Layer", Tier.EXOTIC, rarity_value=4411920))
         self.ores.append(Ore("Circeterra", "Caverna", "Darkmatter Layer", Tier.EXQUISITE, rarity_value=12500000))
         self.ores.append(Ore("Cosmic Treasure", "Caverna", "Darkmatter Layer", Tier.EXQUISITE, rarity_value=8000800))
         self.ores.append(Ore("Galactic Rupture", "Caverna", "Darkmatter Layer", Tier.TRANSCENDENT, rarity_value=24480000))
@@ -257,8 +227,6 @@ class OreDatabase:
         self.ores.append(Ore("Quasar 618", "Caverna", "Darkmatter Layer", Tier.UNFATHOMABLE, rarity_value=618000000))
         
                                       
-        self.ores.append(Ore("Phobetor", "Caverna", "Void Layer", Tier.EXOTIC, rarity_value=3890000))
-        self.ores.append(Ore("Voidflower", "Caverna", "Void Layer", Tier.EXOTIC, rarity_value=5826000))
         self.ores.append(Ore("Estrela", "Caverna", "Void Layer", Tier.EXQUISITE, rarity_value=13200000))
         self.ores.append(Ore("Kaleidium", "Caverna", "Void Layer", Tier.EXQUISITE, rarity_value=7878000))
         self.ores.append(Ore("Andromidium", "Caverna", "Void Layer", Tier.TRANSCENDENT, rarity_value=21780000))
@@ -275,7 +243,6 @@ class OreDatabase:
                        
         self.ores.append(Ore("Cygnus", "Caverna", "Cave Exclusive", Tier.ENIGMATIC, rarity_value=10480900, is_cave_exclusive=True, cave_type="Galactic"))
                         
-        self.ores.append(Ore("Asterium", "Caverna", "Cave Exclusive", Tier.EXOTIC, rarity_value=361000, is_cave_exclusive=True, cave_type="Enchanted"))
         self.ores.append(Ore("Observatorium", "Caverna", "Cave Exclusive", Tier.OTHERWORLDLY, rarity_value=63245790, is_cave_exclusive=True, cave_type="Enchanted"))
                        
         self.ores.append(Ore("Lavortia", "Caverna", "Cave Exclusive", Tier.TRANSCENDENT, rarity_value=1347290, is_cave_exclusive=True, cave_type="Luminous"))
@@ -286,8 +253,6 @@ class OreDatabase:
         
                        
                                             
-        self.ores.append(Ore("Auriceph", "Digita", "Statistone Layer", Tier.EXOTIC, rarity_value=7500000))
-        self.ores.append(Ore("Decimora", "Digita", "Statistone Layer", Tier.EXOTIC, rarity_value=2302100))
         self.ores.append(Ore("Ethyrilem", "Digita", "Statistone Layer", Tier.EXQUISITE, rarity_value=12777777))
         self.ores.append(Ore("Fluxorium", "Digita", "Statistone Layer", Tier.EXQUISITE, rarity_value=10010023))
         self.ores.append(Ore("Plasverlite", "Digita", "Statistone Layer", Tier.TRANSCENDENT, rarity_value=40000200))
@@ -299,8 +264,6 @@ class OreDatabase:
         self.ores.append(Ore("GENESIS", "Digita", "Statistone Layer", Tier.UNFATHOMABLE, rarity_value=380000000))
         
                                            
-        self.ores.append(Ore("Starbit", "Digita", "Wireframe Layer", Tier.EXOTIC, rarity_value=3120100))
-        self.ores.append(Ore("Triginium", "Digita", "Wireframe Layer", Tier.EXOTIC, rarity_value=2100101))
         self.ores.append(Ore("MK2 Sonar", "Digita", "Wireframe Layer", Tier.EXQUISITE, rarity_value=8100102))
         self.ores.append(Ore("W|REFRAME", "Digita", "Wireframe Layer", Tier.EXQUISITE, rarity_value=13112101))
         self.ores.append(Ore("Cosmonolithius", "Digita", "Wireframe Layer", Tier.TRANSCENDENT, rarity_value=45000000))
@@ -312,8 +275,6 @@ class OreDatabase:
         self.ores.append(Ore("Theon", "Digita", "Wireframe Layer", Tier.UNFATHOMABLE, rarity_value=720000000))
         
                                            
-        self.ores.append(Ore("Icosaformite", "Digita", "Matricite Layer", Tier.EXOTIC, rarity_value=4005000))
-        self.ores.append(Ore("Matrisse", "Digita", "Matricite Layer", Tier.EXOTIC, rarity_value=6000000))
         self.ores.append(Ore("Limelight", "Digita", "Matricite Layer", Tier.EXQUISITE, rarity_value=9210000))
         self.ores.append(Ore("Revonet", "Digita", "Matricite Layer", Tier.EXQUISITE, rarity_value=13100310))
         self.ores.append(Ore("Virtulily", "Digita", "Matricite Layer", Tier.TRANSCENDENT, rarity_value=22100201))
@@ -324,8 +285,6 @@ class OreDatabase:
         self.ores.append(Ore("CHECKPOINT.0901", "Digita", "Matricite Layer", Tier.UNFATHOMABLE, rarity_value=500000000))
         
                                            
-        self.ores.append(Ore("Geigite Receptacle", "Digita", "Mechaloid Layer", Tier.EXOTIC, rarity_value=3520230))
-        self.ores.append(Ore("Mechaspark", "Digita", "Mechaloid Layer", Tier.EXOTIC, rarity_value=4120101))
         self.ores.append(Ore("Invalid Apprehension", "Digita", "Mechaloid Layer", Tier.EXQUISITE, rarity_value=10000011))
         self.ores.append(Ore("Sardonyx", "Digita", "Mechaloid Layer", Tier.EXQUISITE, rarity_value=13102103))
         self.ores.append(Ore("Chaotica", "Digita", "Mechaloid Layer", Tier.TRANSCENDENT, rarity_value=20000020))
@@ -337,8 +296,6 @@ class OreDatabase:
         self.ores.append(Ore("Jadefall", "Digita", "Mechaloid Layer", Tier.OTHERWORLDLY, rarity_value=810000000))
         
                                        
-        self.ores.append(Ore("Eye of the Siren", "Digita", "Steel Layer", Tier.EXOTIC, rarity_value=5120129))
-        self.ores.append(Ore("Terraformation", "Digita", "Steel Layer", Tier.EXOTIC, rarity_value=2456294))
         self.ores.append(Ore("Statigen", "Digita", "Steel Layer", Tier.EXQUISITE, rarity_value=13219000))
         self.ores.append(Ore("Draesdruvite", "Digita", "Steel Layer", Tier.TRANSCENDENT, rarity_value=25109288))
         self.ores.append(Ore("Lifeforce Drainer", "Digita", "Steel Layer", Tier.TRANSCENDENT, rarity_value=23201120))
@@ -349,8 +306,6 @@ class OreDatabase:
         self.ores.append(Ore("Mekanos", "Digita", "Steel Layer", Tier.UNFATHOMABLE, rarity_value=635703105))
         
                                            
-        self.ores.append(Ore("Paraxenos", "Digita", "Penumbrum Layer", Tier.EXOTIC, rarity_value=2600000))
-        self.ores.append(Ore("Tetrium", "Digita", "Penumbrum Layer", Tier.EXOTIC, rarity_value=4321012))
         self.ores.append(Ore("Chromatechnimar", "Digita", "Penumbrum Layer", Tier.EXQUISITE, rarity_value=7600000))
         self.ores.append(Ore("Printorbs", "Digita", "Penumbrum Layer", Tier.EXQUISITE, rarity_value=13201919))
         self.ores.append(Ore("Pixelated Mass", "Digita", "Penumbrum Layer", Tier.TRANSCENDENT, rarity_value=39219101))
@@ -361,8 +316,6 @@ class OreDatabase:
         self.ores.append(Ore("VANTABLACK", "Digita", "Penumbrum Layer", Tier.OTHERWORLDLY, rarity_value=2500000000))
         
                                            
-        self.ores.append(Ore("Mistirine", "Digita", "Twilement Layer", Tier.EXOTIC, rarity_value=6102399))
-        self.ores.append(Ore("Onian", "Digita", "Twilement Layer", Tier.EXOTIC, rarity_value=4101010))
         self.ores.append(Ore("Quantalyx", "Digita", "Twilement Layer", Tier.EXQUISITE, rarity_value=10000000))
         self.ores.append(Ore("Vys", "Digita", "Twilement Layer", Tier.EXQUISITE, rarity_value=13500000))
         self.ores.append(Ore("Portalium", "Digita", "Twilement Layer", Tier.TRANSCENDENT, rarity_value=44320000))
@@ -373,8 +326,6 @@ class OreDatabase:
         self.ores.append(Ore("COSMIC_SPLIT", "Digita", "Twilement Layer", Tier.OTHERWORLDLY, rarity_value=1250000000))
         
                                            
-        self.ores.append(Ore("Bipulsidine", "Digita", "Cosmorock Layer", Tier.EXOTIC, rarity_value=5100203))
-        self.ores.append(Ore("Emberis", "Digita", "Cosmorock Layer", Tier.EXOTIC, rarity_value=3000003))
         self.ores.append(Ore("Kenospina", "Digita", "Cosmorock Layer", Tier.EXQUISITE, rarity_value=11000000))
         self.ores.append(Ore("Nebula Nexus", "Digita", "Cosmorock Layer", Tier.EXQUISITE, rarity_value=9999999))
         self.ores.append(Ore("Cosmilite", "Digita", "Cosmorock Layer", Tier.TRANSCENDENT, rarity_value=42100021))
@@ -385,8 +336,6 @@ class OreDatabase:
         self.ores.append(Ore("Monolith of Origin", "Digita", "Cosmorock Layer", Tier.UNFATHOMABLE, rarity_value=515555595))
         
                                         
-        self.ores.append(Ore("Bug", "Digita", "Glitch Layer", Tier.EXOTIC, rarity_value=4004120))
-        self.ores.append(Ore("Poor Connection", "Digita", "Glitch Layer", Tier.EXOTIC, rarity_value=5129100))
         self.ores.append(Ore("Cyberillic", "Digita", "Glitch Layer", Tier.EXQUISITE, rarity_value=14001014))
         self.ores.append(Ore("Gravitron", "Digita", "Glitch Layer", Tier.EXQUISITE, rarity_value=8001291))
         self.ores.append(Ore("CORRUPTELA", "Digita", "Glitch Layer", Tier.TRANSCENDENT, rarity_value=26910012))
@@ -397,8 +346,6 @@ class OreDatabase:
         self.ores.append(Ore("Unstable Megacore", "Digita", "Glitch Layer", Tier.OTHERWORLDLY, rarity_value=3500000000))
         
                                        
-        self.ores.append(Ore("Corruptal", "Digita", "Virus Layer", Tier.EXOTIC, rarity_value=6192174))
-        self.ores.append(Ore("Glitchreax", "Digita", "Virus Layer", Tier.EXOTIC, rarity_value=4192188))
         self.ores.append(Ore("C-ORE ERROR", "Digita", "Virus Layer", Tier.EXQUISITE, rarity_value=9699991))
         self.ores.append(Ore("Oscilline", "Digita", "Virus Layer", Tier.EXQUISITE, rarity_value=12100991))
         self.ores.append(Ore("Hiderae", "Digita", "Virus Layer", Tier.TRANSCENDENT, rarity_value=27100100))
@@ -414,7 +361,6 @@ class OreDatabase:
                               
         self.ores.append(Ore("Solace", "Digita", "Cave Exclusive", Tier.UNFATHOMABLE, rarity_value=2332960, is_cave_exclusive=True, cave_type="Gilded"))
                      
-        self.ores.append(Ore("Heliotropic Fracture", "Digita", "Cave Exclusive", Tier.EXOTIC, rarity_value=550000, is_cave_exclusive=True, cave_type="Starry"))
         self.ores.append(Ore("Spaceshatter", "Digita", "Cave Exclusive", Tier.EXQUISITE, rarity_value=1700000, is_cave_exclusive=True, cave_type="Starry"))
         self.ores.append(Ore("Nebula Tempest", "Digita", "Cave Exclusive", Tier.TRANSCENDENT, rarity_value=3000000, is_cave_exclusive=True, cave_type="Starry"))
         self.ores.append(Ore("Lumenyl", "Digita", "Cave Exclusive", Tier.TRANSCENDENT, rarity_value=4250000, is_cave_exclusive=True, cave_type="Starry"))
@@ -422,24 +368,18 @@ class OreDatabase:
         self.ores.append(Ore("Aetherion", "Digita", "Cave Exclusive", Tier.ENIGMATIC, rarity_value=23644444, is_cave_exclusive=True, cave_type="Starry"))
         self.ores.append(Ore("Syderea", "Digita", "Cave Exclusive", Tier.OTHERWORLDLY, rarity_value=110000000, is_cave_exclusive=True, cave_type="Starry"))
                      
-        self.ores.append(Ore("Synthetyl", "Digita", "Cave Exclusive", Tier.EXOTIC, rarity_value=500000, is_cave_exclusive=True, cave_type="Matrix"))
         self.ores.append(Ore("4FA208", "Digita", "Cave Exclusive", Tier.EXQUISITE, rarity_value=992907, is_cave_exclusive=True, cave_type="Matrix"))
         self.ores.append(Ore("F24D43", "Digita", "Cave Exclusive", Tier.EXQUISITE, rarity_value=992907, is_cave_exclusive=True, cave_type="Matrix"))
         self.ores.append(Ore("Geometric Quadrant", "Digita", "Cave Exclusive", Tier.TRANSCENDENT, rarity_value=4255319, is_cave_exclusive=True, cave_type="Matrix"))
         self.ores.append(Ore("Geometrix", "Digita", "Cave Exclusive", Tier.ENIGMATIC, rarity_value=9219858, is_cave_exclusive=True, cave_type="Matrix"))
         self.ores.append(Ore("Low.HP", "Digita", "Cave Exclusive", Tier.UNFATHOMABLE, rarity_value=20567375, is_cave_exclusive=True, cave_type="Matrix"))
                       
-        self.ores.append(Ore("Electricore", "Digita", "Cave Exclusive", Tier.EXOTIC, rarity_value=248254, is_cave_exclusive=True, cave_type="Voltaic"))
-        self.ores.append(Ore("Pariluxem", "Digita", "Cave Exclusive", Tier.EXOTIC, rarity_value=331414, is_cave_exclusive=True, cave_type="Voltaic"))
-        self.ores.append(Ore("Corruptryx", "Digita", "Cave Exclusive", Tier.EXOTIC, rarity_value=468000, is_cave_exclusive=True, cave_type="Voltaic"))
         self.ores.append(Ore("Valenarium", "Digita", "Cave Exclusive", Tier.EXQUISITE, rarity_value=769336, is_cave_exclusive=True, cave_type="Voltaic"))
         self.ores.append(Ore("Luminosaic", "Digita", "Cave Exclusive", Tier.TRANSCENDENT, rarity_value=2816020, is_cave_exclusive=True, cave_type="Voltaic"))
         self.ores.append(Ore("Roundabout", "Digita", "Cave Exclusive", Tier.TRANSCENDENT, rarity_value=3754693, is_cave_exclusive=True, cave_type="Voltaic"))
         self.ores.append(Ore("generic68-B", "Digita", "Cave Exclusive", Tier.ENIGMATIC, rarity_value=9386733, is_cave_exclusive=True, cave_type="Voltaic"))
         self.ores.append(Ore("Antlerion", "Digita", "Cave Exclusive", Tier.UNFATHOMABLE, rarity_value=19086357, is_cave_exclusive=True, cave_type="Voltaic"))
                           
-        self.ores.append(Ore("Varonela", "Digita", "Cave Exclusive", Tier.EXOTIC, rarity_value=180000, is_cave_exclusive=True, cave_type="Bichromatic"))
-        self.ores.append(Ore("Arcanicium", "Digita", "Cave Exclusive", Tier.EXOTIC, rarity_value=246646, is_cave_exclusive=True, cave_type="Bichromatic"))
         self.ores.append(Ore("Altair", "Digita", "Cave Exclusive", Tier.EXQUISITE, rarity_value=506595, is_cave_exclusive=True, cave_type="Bichromatic"))
         self.ores.append(Ore("@Combustl0n_+_Syst3m", "Digita", "Cave Exclusive", Tier.EXQUISITE, rarity_value=1013171, is_cave_exclusive=True, cave_type="Bichromatic"))
         self.ores.append(Ore("Fatennial", "Digita", "Cave Exclusive", Tier.TRANSCENDENT, rarity_value=2608915, is_cave_exclusive=True, cave_type="Bichromatic"))
@@ -447,7 +387,6 @@ class OreDatabase:
         self.ores.append(Ore("Sword Waltz", "Digita", "Cave Exclusive", Tier.ENIGMATIC, rarity_value=5628729, is_cave_exclusive=True, cave_type="Bichromatic"))
         self.ores.append(Ore("Thermazine", "Digita", "Cave Exclusive", Tier.UNFATHOMABLE, rarity_value=19250253, is_cave_exclusive=True, cave_type="Bichromatic"))
                             
-        self.ores.append(Ore("Anulus", "Digita", "Cave Exclusive", Tier.EXOTIC, rarity_value=200000, is_cave_exclusive=True, cave_type="Monoprismatic"))
         self.ores.append(Ore("Hypnosia", "Digita", "Cave Exclusive", Tier.EXQUISITE, rarity_value=400000, is_cave_exclusive=True, cave_type="Monoprismatic"))
         self.ores.append(Ore("Iridistar", "Digita", "Cave Exclusive", Tier.EXQUISITE, rarity_value=600000, is_cave_exclusive=True, cave_type="Monoprismatic"))
         self.ores.append(Ore("Finalitium", "Digita", "Cave Exclusive", Tier.TRANSCENDENT, rarity_value=1100000, is_cave_exclusive=True, cave_type="Monoprismatic"))
@@ -465,9 +404,6 @@ class OreDatabase:
         
                             
                                             
-        self.ores.append(Ore("Inktite", "Luna Refuge", "Moon Stone Layer", Tier.EXOTIC, rarity_value=2250000))
-        self.ores.append(Ore("Lunar Codex", "Luna Refuge", "Moon Stone Layer", Tier.EXOTIC, rarity_value=6500000))
-        self.ores.append(Ore("Lunar Freon", "Luna Refuge", "Moon Stone Layer", Tier.EXOTIC, rarity_value=3333333))
         self.ores.append(Ore("Lunar Aurora", "Luna Refuge", "Moon Stone Layer", Tier.TRANSCENDENT, rarity_value=47000000))
         self.ores.append(Ore("Lunar Neomandelite", "Luna Refuge", "Moon Stone Layer", Tier.TRANSCENDENT, rarity_value=25450000))
         self.ores.append(Ore("Soundstrocity", "Luna Refuge", "Moon Stone Layer", Tier.TRANSCENDENT, rarity_value=31000000))
@@ -476,8 +412,6 @@ class OreDatabase:
         self.ores.append(Ore("Lunar Voidirinite", "Luna Refuge", "Moon Stone Layer", Tier.UNFATHOMABLE, rarity_value=750000000))
         
                                              
-        self.ores.append(Ore("Lunar Flaeon", "Luna Refuge", "Moon Mantle Layer", Tier.EXOTIC, rarity_value=3333333))
-        self.ores.append(Ore("Lutetium", "Luna Refuge", "Moon Mantle Layer", Tier.EXOTIC, rarity_value=2517497))
         self.ores.append(Ore("Electrolyx", "Luna Refuge", "Moon Mantle Layer", Tier.EXQUISITE, rarity_value=15000000))
         self.ores.append(Ore("Protoflare", "Luna Refuge", "Moon Mantle Layer", Tier.EXQUISITE, rarity_value=6000000))
         self.ores.append(Ore("Sagittarius Quasar", "Luna Refuge", "Moon Mantle Layer", Tier.EXQUISITE, rarity_value=8200000))
@@ -489,8 +423,6 @@ class OreDatabase:
         self.ores.append(Ore("Armageddium", "Luna Refuge", "Moon Mantle Layer", Tier.UNFATHOMABLE, rarity_value=375000000))
         
                                            
-        self.ores.append(Ore("Lunar Halcyon Emission", "Luna Refuge", "Moon Core Layer", Tier.EXOTIC, rarity_value=3400000))
-        self.ores.append(Ore("Lunar Poiseon", "Luna Refuge", "Moon Core Layer", Tier.EXOTIC, rarity_value=3333333))
         self.ores.append(Ore("Lunar Astatine", "Luna Refuge", "Moon Core Layer", Tier.EXQUISITE, rarity_value=14000000))
         self.ores.append(Ore("Lunar Malachite", "Luna Refuge", "Moon Core Layer", Tier.EXQUISITE, rarity_value=11500000))
         self.ores.append(Ore("Orb of Discontent", "Luna Refuge", "Moon Core Layer", Tier.TRANSCENDENT, rarity_value=25000000))
@@ -502,8 +434,6 @@ class OreDatabase:
         self.ores.append(Ore("Epinephrine", "Luna Refuge", "Moon Core Layer", Tier.OTHERWORLDLY, rarity_value=999999999))
         
                                       
-        self.ores.append(Ore("BANANORE", "Luna Refuge", "Rocc Layer", Tier.EXOTIC, rarity_value=6000000))
-        self.ores.append(Ore("WATERMELON ORE", "Luna Refuge", "Rocc Layer", Tier.EXOTIC, rarity_value=4500000))
         self.ores.append(Ore("COCONUT ORE", "Luna Refuge", "Rocc Layer", Tier.EXQUISITE, rarity_value=8000000))
         self.ores.append(Ore("CHICKEN Crystal", "Luna Refuge", "Rocc Layer", Tier.TRANSCENDENT, rarity_value=30000000))
         self.ores.append(Ore("the funny", "Luna Refuge", "Rocc Layer", Tier.TRANSCENDENT, rarity_value=40000000))
@@ -519,13 +449,10 @@ class OreDatabase:
         self.ores.append(Ore("Lunar Gargantium", "Luna Refuge", "Cave Exclusive", Tier.TRANSCENDENT, rarity_value=6500000, is_cave_exclusive=True, cave_type="Magmatic"))
         self.ores.append(Ore("Lunar Coronal Flare", "Luna Refuge", "Cave Exclusive", Tier.ENIGMATIC, rarity_value=13150000, is_cave_exclusive=True, cave_type="Magmatic"))
                           
-        self.ores.append(Ore("Lunar Coronium", "Luna Refuge", "Cave Exclusive", Tier.EXOTIC, rarity_value=600000, is_cave_exclusive=True, cave_type="Radioactive"))
-        self.ores.append(Ore("Lunar Neptunium", "Luna Refuge", "Cave Exclusive", Tier.EXOTIC, rarity_value=800000, is_cave_exclusive=True, cave_type="Radioactive"))
         self.ores.append(Ore("Surgium", "Luna Refuge", "Cave Exclusive", Tier.EXQUISITE, rarity_value=975000, is_cave_exclusive=True, cave_type="Radioactive"))
         self.ores.append(Ore("Lunar Lawrencium", "Luna Refuge", "Cave Exclusive", Tier.TRANSCENDENT, rarity_value=6000000, is_cave_exclusive=True, cave_type="Radioactive"))
         self.ores.append(Ore("Oganesson", "Luna Refuge", "Cave Exclusive", Tier.ENIGMATIC, rarity_value=12400000, is_cave_exclusive=True, cave_type="Radioactive"))
                            
-        self.ores.append(Ore("Lunar Pulsar Crystal", "Luna Refuge", "Cave Exclusive", Tier.EXOTIC, rarity_value=850000, is_cave_exclusive=True, cave_type="Interstellar"))
         self.ores.append(Ore("Lunar Andromidium", "Luna Refuge", "Cave Exclusive", Tier.TRANSCENDENT, rarity_value=3000000, is_cave_exclusive=True, cave_type="Interstellar"))
         self.ores.append(Ore("R136a1", "Luna Refuge", "Cave Exclusive", Tier.TRANSCENDENT, rarity_value=5300000, is_cave_exclusive=True, cave_type="Interstellar"))
         self.ores.append(Ore("Lunar HR 5171 A", "Luna Refuge", "Cave Exclusive", Tier.ENIGMATIC, rarity_value=9000000, is_cave_exclusive=True, cave_type="Interstellar"))
@@ -542,8 +469,6 @@ class OreDatabase:
         
                          
                                             
-        self.ores.append(Ore("Agoraphore", "Aesteria", "Spookstone Layer", Tier.EXOTIC, rarity_value=6230001))
-        self.ores.append(Ore("Demonizine", "Aesteria", "Spookstone Layer", Tier.EXOTIC, rarity_value=3600000))
         self.ores.append(Ore("Confined Cataclysm", "Aesteria", "Spookstone Layer", Tier.EXQUISITE, rarity_value=12200200))
         self.ores.append(Ore("Plasmitan", "Aesteria", "Spookstone Layer", Tier.TRANSCENDENT, rarity_value=24800000))
         self.ores.append(Ore("Panselinos", "Aesteria", "Spookstone Layer", Tier.TRANSCENDENT, rarity_value=30140000))
@@ -553,8 +478,6 @@ class OreDatabase:
         self.ores.append(Ore("Scourge", "Aesteria", "Spookstone Layer", Tier.UNFATHOMABLE, rarity_value=175430000))
         
                                           
-        self.ores.append(Ore("Lilaverine", "Aesteria", "Affement Layer", Tier.EXOTIC, rarity_value=2300000))
-        self.ores.append(Ore("Rosarium", "Aesteria", "Affement Layer", Tier.EXOTIC, rarity_value=5555555))
         self.ores.append(Ore("Mythical Hive", "Aesteria", "Affement Layer", Tier.EXQUISITE, rarity_value=12121212))
         self.ores.append(Ore("Valentinyl", "Aesteria", "Affement Layer", Tier.EXQUISITE, rarity_value=12222222))
         self.ores.append(Ore("Lovessence", "Aesteria", "Affement Layer", Tier.TRANSCENDENT, rarity_value=22222222))
@@ -564,8 +487,6 @@ class OreDatabase:
         self.ores.append(Ore("Aphrodite's Ring", "Aesteria", "Affement Layer", Tier.UNFATHOMABLE, rarity_value=214000496))
         
                                                
-        self.ores.append(Ore("Clotivein", "Aesteria", "Withered Sand Layer", Tier.EXOTIC, rarity_value=7191000))
-        self.ores.append(Ore("Silence", "Aesteria", "Withered Sand Layer", Tier.EXOTIC, rarity_value=3260100))
         self.ores.append(Ore("Flamakern", "Aesteria", "Withered Sand Layer", Tier.EXQUISITE, rarity_value=9050000))
         self.ores.append(Ore("Hallowed Cage", "Aesteria", "Withered Sand Layer", Tier.EXQUISITE, rarity_value=9050000))
         self.ores.append(Ore("Vitalium", "Aesteria", "Withered Sand Layer", Tier.EXQUISITE, rarity_value=14880000))
@@ -578,8 +499,6 @@ class OreDatabase:
         self.ores.append(Ore("Venemence", "Aesteria", "Withered Sand Layer", Tier.UNFATHOMABLE, rarity_value=475300660))
         
                                           
-        self.ores.append(Ore("Candlelight", "Aesteria", "Hexafite Layer", Tier.EXOTIC, rarity_value=6670000))
-        self.ores.append(Ore("Ghouleum", "Aesteria", "Hexafite Layer", Tier.EXOTIC, rarity_value=2801900))
         self.ores.append(Ore("Antipathy", "Aesteria", "Hexafite Layer", Tier.EXQUISITE, rarity_value=11700000))
         self.ores.append(Ore("Necrocrysta", "Aesteria", "Hexafite Layer", Tier.EXQUISITE, rarity_value=10235000))
         self.ores.append(Ore("Vexareign", "Aesteria", "Hexafite Layer", Tier.EXQUISITE, rarity_value=8839100))
@@ -593,8 +512,6 @@ class OreDatabase:
         self.ores.append(Ore("Hallownest", "Aesteria", "Hexafite Layer", Tier.UNFATHOMABLE, rarity_value=312200300))
         
                                            
-        self.ores.append(Ore("Glacius", "Aesteria", "Deepfrost Layer", Tier.EXOTIC, rarity_value=9750000))
-        self.ores.append(Ore("Snowsled", "Aesteria", "Deepfrost Layer", Tier.EXOTIC, rarity_value=4400000))
         self.ores.append(Ore("Frostica", "Aesteria", "Deepfrost Layer", Tier.EXQUISITE, rarity_value=13000000))
         self.ores.append(Ore("Glacial Monolith", "Aesteria", "Deepfrost Layer", Tier.EXQUISITE, rarity_value=25000000))
         self.ores.append(Ore("Glaceiaflux", "Aesteria", "Deepfrost Layer", Tier.TRANSCENDENT, rarity_value=38800000))
@@ -603,8 +520,6 @@ class OreDatabase:
         self.ores.append(Ore("Ephemryst", "Aesteria", "Deepfrost Layer", Tier.ENIGMATIC, rarity_value=275320000))
         
                                             
-        self.ores.append(Ore("Pentaurunel", "Aesteria", "Jollystone Layer", Tier.EXOTIC, rarity_value=14500000))
-        self.ores.append(Ore("Snowglobe II", "Aesteria", "Jollystone Layer", Tier.EXOTIC, rarity_value=4230000))
         self.ores.append(Ore("Luxe", "Aesteria", "Jollystone Layer", Tier.TRANSCENDENT, rarity_value=40000000))
         self.ores.append(Ore("The Express", "Aesteria", "Jollystone Layer", Tier.TRANSCENDENT, rarity_value=25260000))
         self.ores.append(Ore("Toyblast", "Aesteria", "Jollystone Layer", Tier.TRANSCENDENT, rarity_value=32190000))
@@ -613,8 +528,6 @@ class OreDatabase:
         self.ores.append(Ore("Coruscentia", "Aesteria", "Jollystone Layer", Tier.UNFATHOMABLE, rarity_value=240800000))
         
                                           
-        self.ores.append(Ore("Beachball", "Aesteria", "Maculite Layer", Tier.EXOTIC, rarity_value=2240000))
-        self.ores.append(Ore("Sol", "Aesteria", "Maculite Layer", Tier.EXOTIC, rarity_value=7110000))
         self.ores.append(Ore("Dunestride", "Aesteria", "Maculite Layer", Tier.EXQUISITE, rarity_value=12938404))
         self.ores.append(Ore("Sunshade", "Aesteria", "Maculite Layer", Tier.EXQUISITE, rarity_value=8444000))
         self.ores.append(Ore("Sandstorm", "Aesteria", "Maculite Layer", Tier.TRANSCENDENT, rarity_value=27355200))
@@ -624,8 +537,6 @@ class OreDatabase:
         self.ores.append(Ore("Perihelion", "Aesteria", "Maculite Layer", Tier.UNFATHOMABLE, rarity_value=436000000))
         
                                           
-        self.ores.append(Ore("Abyssium", "Aesteria", "Surmilum Layer", Tier.EXOTIC, rarity_value=5554555))
-        self.ores.append(Ore("Floativite", "Aesteria", "Surmilum Layer", Tier.EXOTIC, rarity_value=3720880))
         self.ores.append(Ore("Sunsurf", "Aesteria", "Surmilum Layer", Tier.EXQUISITE, rarity_value=14250000))
         self.ores.append(Ore("Victide", "Aesteria", "Surmilum Layer", Tier.EXQUISITE, rarity_value=10000200))
         self.ores.append(Ore("Nautitan", "Aesteria", "Surmilum Layer", Tier.TRANSCENDENT, rarity_value=28424300))
@@ -635,8 +546,6 @@ class OreDatabase:
         self.ores.append(Ore("Subliminaire", "Aesteria", "Surmilum Layer", Tier.UNFATHOMABLE, rarity_value=505505505))
         
                                             
-        self.ores.append(Ore("Bloodshot", "Aesteria", "Sugarstone Layer", Tier.EXOTIC, rarity_value=6302204))
-        self.ores.append(Ore("Witchbroom", "Aesteria", "Sugarstone Layer", Tier.EXOTIC, rarity_value=3335000))
         self.ores.append(Ore("Spectrasoul", "Aesteria", "Sugarstone Layer", Tier.EXQUISITE, rarity_value=9103204))
         self.ores.append(Ore("Venurbite", "Aesteria", "Sugarstone Layer", Tier.EXQUISITE, rarity_value=12250000))
         self.ores.append(Ore("Hollowed", "Aesteria", "Sugarstone Layer", Tier.TRANSCENDENT, rarity_value=45554555))
@@ -649,8 +558,6 @@ class OreDatabase:
         self.ores.append(Ore("Vocarus", "Aesteria", "Sugarstone Layer", Tier.UNFATHOMABLE, rarity_value=335191400))
         
                                             
-        self.ores.append(Ore("Eyemalgam", "Aesteria", "Delucemite Layer", Tier.EXOTIC, rarity_value=6246575))
-        self.ores.append(Ore("Tombstone", "Aesteria", "Delucemite Layer", Tier.EXOTIC, rarity_value=2111111))
         self.ores.append(Ore("Silverthorn", "Aesteria", "Delucemite Layer", Tier.EXQUISITE, rarity_value=14343235))
         self.ores.append(Ore("Soulsnare", "Aesteria", "Delucemite Layer", Tier.EXQUISITE, rarity_value=11230050))
         self.ores.append(Ore("Aphantasia", "Aesteria", "Delucemite Layer", Tier.TRANSCENDENT, rarity_value=41200000))
@@ -664,8 +571,6 @@ class OreDatabase:
         self.ores.append(Ore("Overseer", "Aesteria", "Delucemite Layer", Tier.OTHERWORLDLY, rarity_value=977737207))
         
                                        
-        self.ores.append(Ore("Boreas", "Aesteria", "Frost Layer", Tier.EXOTIC, rarity_value=4300000))
-        self.ores.append(Ore("Nixalis", "Aesteria", "Frost Layer", Tier.EXOTIC, rarity_value=2000000))
         self.ores.append(Ore("Festivian", "Aesteria", "Frost Layer", Tier.EXQUISITE, rarity_value=13500000))
         self.ores.append(Ore("Noctilucite", "Aesteria", "Frost Layer", Tier.EXQUISITE, rarity_value=7700000))
         self.ores.append(Ore("Behemoth Snowflake", "Aesteria", "Frost Layer", Tier.TRANSCENDENT, rarity_value=30000000))
@@ -682,7 +587,6 @@ class OreDatabase:
         self.ores.append(Ore("Amalton", "Aesteria", "Cave Exclusive", Tier.TRANSCENDENT, rarity_value=2529420, is_cave_exclusive=True, cave_type="Soulseek"))
         self.ores.append(Ore("Heretic's Cage", "Aesteria", "Cave Exclusive", Tier.ENIGMATIC, rarity_value=7425240, is_cave_exclusive=True, cave_type="Soulseek"))
                           
-        self.ores.append(Ore("Lovestruck", "Aesteria", "Cave Exclusive", Tier.EXOTIC, rarity_value=1010101, is_cave_exclusive=True, cave_type="Heartstring"))
         self.ores.append(Ore("Amorisene", "Aesteria", "Cave Exclusive", Tier.ENIGMATIC, rarity_value=9285714, is_cave_exclusive=True, cave_type="Heartstring"))
                         
         self.ores.append(Ore("Cursed Flesh", "Aesteria", "Cave Exclusive", Tier.TRANSCENDENT, rarity_value=843000, is_cave_exclusive=True, cave_type="Fractured"))
@@ -690,8 +594,6 @@ class OreDatabase:
         
                          
                                            
-        self.ores.append(Ore("Charliment", "Lucernia", "Lucitreum Layer", Tier.EXOTIC, rarity_value=2700100))
-        self.ores.append(Ore("Luna", "Lucernia", "Lucitreum Layer", Tier.EXOTIC, rarity_value=5000005))
         self.ores.append(Ore("Gelisol", "Lucernia", "Lucitreum Layer", Tier.EXQUISITE, rarity_value=9100999))
         self.ores.append(Ore("Lyricarol", "Lucernia", "Lucitreum Layer", Tier.EXQUISITE, rarity_value=12030000))
         self.ores.append(Ore("Snowglobe III", "Lucernia", "Lucitreum Layer", Tier.TRANSCENDENT, rarity_value=44320000))
@@ -703,9 +605,6 @@ class OreDatabase:
         self.ores.append(Ore("Yuki Onna", "Lucernia", "Lucitreum Layer", Tier.UNFATHOMABLE, rarity_value=532100335))
         
                                            
-        self.ores.append(Ore("Glaciamoria", "Lucernia", "Cicallite Layer", Tier.EXOTIC, rarity_value=5000000))
-        self.ores.append(Ore("Mr. Frosty", "Lucernia", "Cicallite Layer", Tier.EXOTIC, rarity_value=4000000))
-        self.ores.append(Ore("Winterlark", "Lucernia", "Cicallite Layer", Tier.EXOTIC, rarity_value=3000000))
         self.ores.append(Ore("Aesrith", "Lucernia", "Cicallite Layer", Tier.EXQUISITE, rarity_value=11029000))
         self.ores.append(Ore("Frostbite", "Lucernia", "Cicallite Layer", Tier.EXQUISITE, rarity_value=14442444))
         self.ores.append(Ore("Antlerice", "Lucernia", "Cicallite Layer", Tier.TRANSCENDENT, rarity_value=30100200))
@@ -717,9 +616,6 @@ class OreDatabase:
         self.ores.append(Ore("Polarctica", "Lucernia", "Cicallite Layer", Tier.UNFATHOMABLE, rarity_value=686019200))
         
                                             
-        self.ores.append(Ore("Jinglelyn", "Lucernia", "Confectent Layer", Tier.EXOTIC, rarity_value=3200000))
-        self.ores.append(Ore("Kindleflame", "Lucernia", "Confectent Layer", Tier.EXOTIC, rarity_value=6000200))
-        self.ores.append(Ore("Twinkle Star", "Lucernia", "Confectent Layer", Tier.EXOTIC, rarity_value=2500000))
         self.ores.append(Ore("Festivatia", "Lucernia", "Confectent Layer", Tier.EXQUISITE, rarity_value=8100200))
         self.ores.append(Ore("Luminaria", "Lucernia", "Confectent Layer", Tier.EXQUISITE, rarity_value=10020020))
         self.ores.append(Ore("Chandelabra", "Lucernia", "Confectent Layer", Tier.TRANSCENDENT, rarity_value=24029990))
@@ -731,8 +627,6 @@ class OreDatabase:
         self.ores.append(Ore("Wintburg", "Lucernia", "Confectent Layer", Tier.UNFATHOMABLE, rarity_value=732349090))
         
                                            
-        self.ores.append(Ore("Acore", "Lucernia", "Foligrass Layer", Tier.EXOTIC, rarity_value=6500200))
-        self.ores.append(Ore("Leaffall", "Lucernia", "Foligrass Layer", Tier.EXOTIC, rarity_value=3300000))
         self.ores.append(Ore("Clementium", "Lucernia", "Foligrass Layer", Tier.EXQUISITE, rarity_value=9700120))
         self.ores.append(Ore("Harvestine", "Lucernia", "Foligrass Layer", Tier.EXQUISITE, rarity_value=13400200))
         self.ores.append(Ore("Harvest Moon", "Lucernia", "Foligrass Layer", Tier.TRANSCENDENT, rarity_value=19500300))
@@ -744,8 +638,6 @@ class OreDatabase:
         self.ores.append(Ore("Reminiscence", "Lucernia", "Foligrass Layer", Tier.UNFATHOMABLE, rarity_value=390100600))
         
                                            
-        self.ores.append(Ore("Rot Monolith", "Lucernia", "Sepulcrum Layer", Tier.EXOTIC, rarity_value=7264513))
-        self.ores.append(Ore("Wraith", "Lucernia", "Sepulcrum Layer", Tier.EXOTIC, rarity_value=3724561))
         self.ores.append(Ore("Itomidori", "Lucernia", "Sepulcrum Layer", Tier.EXQUISITE, rarity_value=7500001))
         self.ores.append(Ore("Whirliwisp", "Lucernia", "Sepulcrum Layer", Tier.EXQUISITE, rarity_value=14999999))
         self.ores.append(Ore("Morichronica", "Lucernia", "Sepulcrum Layer", Tier.TRANSCENDENT, rarity_value=47250000))
@@ -758,8 +650,6 @@ class OreDatabase:
         self.ores.append(Ore("Midnight", "Lucernia", "Sepulcrum Layer", Tier.UNFATHOMABLE, rarity_value=490001200))
         
                                           
-        self.ores.append(Ore("Sigilite", "Lucernia", "Wickrock Layer", Tier.EXOTIC, rarity_value=6666666))
-        self.ores.append(Ore("SMILE", "Lucernia", "Wickrock Layer", Tier.EXOTIC, rarity_value=3666666))
         self.ores.append(Ore("Diavitura", "Lucernia", "Wickrock Layer", Tier.EXQUISITE, rarity_value=12666666))
         self.ores.append(Ore("Ritualismium", "Lucernia", "Wickrock Layer", Tier.EXQUISITE, rarity_value=8666666))
         self.ores.append(Ore("Moon Fragment", "Lucernia", "Wickrock Layer", Tier.TRANSCENDENT, rarity_value=36666666))
@@ -772,7 +662,6 @@ class OreDatabase:
         
                                       
                        
-        self.ores.append(Ore("Celebration", "Lucernia", "Cave Exclusive", Tier.EXOTIC, rarity_value=265957, is_cave_exclusive=True, cave_type="Firework"))
     
     def get_all_ores(self) -> List[Ore]:
                           
@@ -936,7 +825,6 @@ class OreDatabase:
             Tier.MASTER: 4,
             Tier.SURREAL: 5,
             Tier.MYTHIC: 6,
-            Tier.EXOTIC: 7,
             Tier.EXQUISITE: 8,
             Tier.TRANSCENDENT: 9,
             Tier.ENIGMATIC: 10,
